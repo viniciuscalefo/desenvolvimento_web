@@ -1,0 +1,21 @@
+/* Write your code here: */
+h1,h2{ /*aidicona a ',' para usar mais de um seletor para fazer algo que englobe os dois */
+    color: blueviolet;
+}
+.box >p{/*Outro metodo é o de filhos, onde vc seleciona elementos que estão dentro de outros elementos e necessariamnte o pai tem que esta logo acimo do filho, identado um nivel acima */
+    color: firebrick;
+}
+
+.box li{/*Descendente, o mais a esquerda tem a prioridade, muito semelhante ao de filhos*/
+    color: blue;
+}
+
+li.done{
+    color: seagreen;
+}
+
+ul > p.done{
+    font-size: 0.5rem;
+}
+    
+    
