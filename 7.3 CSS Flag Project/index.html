@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    .flag{/*fundo da bandeira*/
+      background-color: rgb(206, 17, 38);;
+      height: 600px;
+      width: 900px;  
+      position: relative
+    }
+
+    .flag > div{/*Faixa Azul*/
+      height: 300px;
+      width: 100%;/*100% do largura do pai */
+      background-color: rgb(0, 40, 104);
+      position:absolute;/*coloquie relative*/
+      top: 150px /*e top de 50px*/
+
+    }
+    .flag div> div{/*circulo*/
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      background-color: white;
+      position: absolute; /*coloquie relative*/
+      left: 350px;
+      top: 50px; /*Não tinha colocado top*/
+    }
+    p {
+      font-size: 5rem;
+      color: white;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+    }
+
+    .flag>div div p {
+      color: black;
+    }
+    
+  </style>
+</head>
+
+<!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
+
+<!--PLANO DE FUNDO: A Posição  relative pega como base o elemento pai, como a primeira div n tem pai, ao colocar a position relative ela vai em direção ao canto inferior esquerdo -->
+
+<!--FAIXA AZUL: Uma froma comum de estilização é atribuir ao pai o relative ao realizar a movimentação atraves dos filhos (usando o absolute e deslocando p/ o lado qui quiser a partir de medidas e orientações ) -->
+
+<!-- CIRCULO BRANCO: raciocinio de deixar ela relativa ao item pai (faixa azul) e realizr o deslocamento atraves da dedução de medidas -->
