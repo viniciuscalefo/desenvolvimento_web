@@ -13,9 +13,13 @@
     }
     .pricing-container{
       display: flex;
-      justify-content: center;
-      align-content: center;/*colocar no meio a tela*/
+      justify-content: center;/*Alinhar qqr coisa horizontalmente (16-18)*/
+      align-items: center; 
+      height: 100vh;
       gap: 2rem;
+      flex-shrink: 0;
+      padding: 2rem;
+      flex: 1;
     }
 
     .pricing-plan{
@@ -23,7 +27,6 @@
       padding: 20px;
       border-radius: 10px;
       border: 5px solid black;
-      flex-basis: 400px;
     }
     .plan-title {
       font-family: Georgia, 'Times New Roman', Times, serif;
@@ -40,22 +43,36 @@
       font-weight: bolder;
     }
 
-    .plan-features{
+    .plan-features > li{
       list-style: none;
       padding: 0;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.2rem;
     }
 
     .plan-button{
       background-color: lightgreen;
       border: 1px solid black;
       border-radius: 5px;
-      align-content: center;
+      margin-left: 10.3rem;
+      
 
     }
 
+    .plan-button:hover{
+      background-color: aquamarine;
+    }
+
+
     /* Hint: What can you do with a media query and flexbox? */
     @media (max-width: 1250px) {
+      .pricing-container{
+        display: flex;
+        flex-direction: column;
+        height: 100%; /*deixar 100% da div disponível. Se usasse o vh ficava faltando espaço*/
+      }
       
     }
   </style>
