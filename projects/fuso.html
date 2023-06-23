@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fusos Horários</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 50% 50% ;
+            grid-template-rows: 50% 50% ;
+            gap: 9px;
+        }
+        .item{
+            background-color: antiquewhite;
+            padding: 1rem;
+            text-align: center;
+            height:300px
+        }
+        #clock {
+            font-size: 5rem;
+            background-color: red;
+            height: 100px;
+            width: fit-content;
+            justify-content: center
+            align-items: color-interpolation-filters:  
+    
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Horário nos Hemisférios</h1>
+
+    <div class="container">
+        <div class="item eua">
+            <h2>Estados Unidos</h2>
+            <div id="clock"></div>
+
+        </div>
+
+        <div class=" item brazil">
+            <h2>Brasil</h2>
+
+        </div>
+
+        <div class="item germany">
+            <h2>Alemanha</h2>
+
+        </div>
+
+        <div class="item china">
+            <h2>China</h2>
+
+        </div>
+    </div>
+</body>
+    <script>
+        function getHours() {
+            const clock = document.getElementById("clock");
+            const date = new Date();
+            const hours = date.getHours();
+            const minutes = date.getMinutes();
+            const seconds = date.getSeconds();
+            const hour = hours < 10 ? `0${hours}` : hours; //se a hora for menos que 10 concatena um 0 senão deixo na variavel antiga
+            const minute = minutes < 10 ? `0${minutes}` : minutes; //se o minuto  for menos que 10 concatena um 0 senão deixo na variavel antiga
+            const second = seconds < 10 ? `0${seconds}` : seconds; //se o segundo for menos que 10 concatena um 0
+            clock.innerHTML = `${hour}:${minute}:${second}`;
+    }
+
+            setInterval(function () {
+            getHours();
+            }, 1000);
+    </script>
+</html>
