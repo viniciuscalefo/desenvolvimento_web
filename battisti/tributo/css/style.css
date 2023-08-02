@@ -1,0 +1,52 @@
+html{
+    font-family:Helvetica, sans-serif;
+    background-color: #ddd;
+}
+.container{
+    max-width: 1100px;
+    background-color: #fff;
+    position: relative;
+    margin: 50px auto;
+    padding: 20px 50px;
+}
+
+.title{
+    font-size:40px ;
+}
+.sub-title{
+    font-style: italic;
+}
+.integrantes{
+    text-align: center;
+    margin-top: 50px;
+}
+.about{
+    padding: 25px 0px ;
+    margin: 25px 0px ;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+.quotacion{
+    background-color: #ddd;
+    padding: 30px; 
+}
+.quotacion blockquote{
+    font-weight: bold;
+    font-size: 30px;
+}
+.quotacion p{
+    font-style: italic;
+}
+.curiosities{
+    padding: 25px 0px;
+    margin: 25px 0px ;
+    border-top: 1px dashed #ddd;
+    border-bottom: 1px dashed #ddd;
+}
+.curiosities li{
+    height: 30px;
+}
+.second-image{
+    font-weight: bold;
+    text-align: center;
+}
