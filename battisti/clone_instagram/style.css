@@ -1,0 +1,144 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Outfit', sans-serif;
+    background-color: #ececec;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    min-height:100vh;
+    padding: 20px;
+    
+}
+/* Container */
+.container{
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 600px;
+    width: 65%;
+}
+
+/* Espaçamanto entre os dois lados */
+.right .left{
+    width: 50%;
+    height: 100%;
+}
+.left img{
+    height:600px
+}
+
+.right{
+    background-color:#ececec46;
+}
+
+/* Parte de login */
+.login{
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(161, 156, 156, 0.384);
+    background-color: #ffffffe7
+    
+}
+.logo-instagram img{/*ver*/
+    width:40%;
+    margin:20px 70px 30px 110px
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+input{
+    width: 350px;
+    height: 50px;
+    background-color:rgba(161, 156, 156, 0.158);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 10px;
+}
+
+.btn-entrar{
+    height: 35px;
+    border-radius: 7px;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: rgba(94, 175, 241, 0.637);
+    border: none;
+}
+
+.ou{
+    display:flex ;
+}
+
+.facebook{
+    display: flex;
+    margin: 30px 0px;
+}
+
+.logo-facebook{
+    width: 20px;
+    height: 20px;
+    margin-right:10px ;
+}
+
+.facebook p{
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+
+.senha{
+    font-size: 17px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: rgb(4, 4, 85);
+}
+
+.cadastro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: #ffffffe7;
+    margin-top: 15px;
+    border: 1px solid  rgba(161, 156, 156, 0.384);
+    font-size:18px;
+    font-weight: 500;
+}
+.cadastro span{
+    color: rgba(10, 10, 194, 0.836);
+    font-weight: bolder;
+}
+.app{
+    text-align: center;
+    font-size: 18px;
+    margin: 10px 0px;
+}
+
+.stores{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:90%;
+    gap:10px;
+    margin-left: 30px;
+
+}
+.icon{
+    text-align: center;
+    width:50%;
+}
